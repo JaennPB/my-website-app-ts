@@ -2,14 +2,16 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import styled from "styled-components";
-import Dashboard from "../components/Dashboard";
 
+import Dashboard from "../components/Dashboard";
 import NavLeft from "../components/NavLeft";
 import NavTop from "../components/NavTop";
 
 const Main = styled.main`
   background-color: #03355d;
   height: 100vh;
+
+  color: white;
 
   display: grid;
   grid-template-columns: 6rem 1fr;

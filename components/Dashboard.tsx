@@ -27,6 +27,8 @@ const HeadingAccent = styled.span`
 const Description = styled.p`
   font-size: 2rem;
   font-weight: 300;
+
+  margin-bottom: 6rem;
 `;
 
 const ImgContainer = styled.div`
@@ -57,18 +59,15 @@ const Dashboard: React.FC = () => {
             {/* <Image alt="me" src="/me.png" height={200} width={200} /> */}
           </ImgContainer>
           <Heading>
-            Web & Mobile App <HeadingAccent>Developer</HeadingAccent>
+            Mobile App <HeadingAccent>Developer</HeadingAccent>
           </Heading>
         </HeadingContainer>
         <Description>
-          I design and create beautiful, modern and powerful full-stack
-          applications for IOS, Android and the Web.
-          <br />
-          <br />I am deeply focused on staying updated and using current and
-          in-demand tecnologies for my projects. The main technologies I like to
-          use are: React Native for mobile development and React.Js with Next.Js
-          for web applications. I use TypeScript for all my projects and
-          Firebase is my back-end of choice.
+          I design and create beautiful, modern, and powerful full-stack
+          applications for IOS and Android.
+        </Description>
+        <Description>
+          Slide right to view my projects and main technologies I use.
         </Description>
       </IntroSection>
       <Arrow />

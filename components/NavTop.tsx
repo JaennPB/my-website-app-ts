@@ -2,8 +2,8 @@ import React from "react";
 
 import styled from "styled-components";
 
-// import { faTerminal } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = styled.nav`
   border-bottom: 2px solid #284e73;
@@ -17,7 +17,7 @@ const Nav = styled.nav`
 
 const Brand = styled.div`
   font-size: 2.5rem;
-  margin-left: 6rem;
+  margin-left: 1rem;
 
   display: flex;
   align-items: center;
@@ -26,9 +26,11 @@ const Brand = styled.div`
 const ContactButton = styled.button`
   height: 100%;
   width: 30rem;
-  font-size: 1.6rem;
   border: none;
   background-color: #254b6b;
+
+  font-size: 1.6rem;
+  color: white;
 
   :hover {
     background-color: #2e5c83;
@@ -59,9 +61,9 @@ const NavTop: React.FC = () => {
   return (
     <Nav>
       <Brand>
-        {/* <Icon>
+        <Icon>
           <FontAwesomeIcon icon={faTerminal} />
-        </Icon> */}
+        </Icon>
         Jaenn Poumian
       </Brand>
       <ContactButton>Contact me</ContactButton>

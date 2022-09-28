@@ -1,8 +1,8 @@
 import React from "react";
 
-// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-// import { faBars, faBriefcase } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styled from "styled-components";
 
@@ -55,11 +55,19 @@ const Link = styled.div`
 const NavLeft: React.FC = () => {
   return (
     <Nav>
-      <MenuHamburger>{/* <FontAwesomeIcon icon={faBars} /> */}</MenuHamburger>
+      <MenuHamburger>
+        <FontAwesomeIcon icon={faBars} />
+      </MenuHamburger>
       <SocialLinks>
-        <Link>{/* <FontAwesomeIcon icon={faLinkedin} /> */}</Link>
-        <Link>{/* <FontAwesomeIcon icon={faGithub} /> */}</Link>
-        <Link>{/* <FontAwesomeIcon icon={faBriefcase} /> */}</Link>
+        <Link>
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Link>
+        <Link>
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
+        <Link>
+          <FontAwesomeIcon icon={faBriefcase} />
+        </Link>
       </SocialLinks>
     </Nav>
   );
